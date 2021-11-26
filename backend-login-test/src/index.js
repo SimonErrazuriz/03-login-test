@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 require('./database');
 
-app.listen(app.get(port));
+app.use(require('./routes/user'));
+
+app.listen(3000);
 console.log('Servidor en el puerto: ', port);
