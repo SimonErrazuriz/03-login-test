@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+require('./database');
+
 app.listen(app.get(port));
-console.log('servidor en el puerto: ', port);
+console.log('Servidor en el puerto: ', port);
